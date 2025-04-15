@@ -1,101 +1,112 @@
 body {
-    background-color: #ffffff;
-    margin: 0;
-  }
-
+  background-color: #ffffff;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
 
 .tickethack {
-    font-weight: bold;
-    color: turquoise; 
-    font-size: 20px;
-  }
-  
+  font-weight: bold;
+  color: turquoise;
+  font-size: 20px;
+}
+
 .cart {
-    color: black; 
-    color
-    font-size: 15px;
-  }
+  color: black;
+  font-size: 15px;
+}
 
 .bookings {
-    color: black; 
-    font-size: 15px;
-  }
+  color: black;
+  font-size: 15px;
+}
 
 .explore {
-    color: white;
-    font-size: 35px;
-    text-align: center;
-
+  color: white;
+  font-size: 35px;
+  text-align: center;
 }
 
 .compare {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    font-weight: lighter;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 #header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #link {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+}
+#link a {
+  text-decoration: none;
 }
 
-
-
-
-#container{
-  background-image: url(./images/background.jpg);
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-rows: repeat(1, 2fr);
-  grid-template-columns: repeat(1, 2fr);
+#content-title {
+  margin-bottom: 80px;
+}
+#content-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
-#content-bottom{
-display: flex;
-justify-content: center;
-gap: 100px
-;
-
+#right-container {
+  display: flex;
+  flex-direction: column;
+  background-color: azure;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  border-radius: 10px;
+}
+.logo {
+  width: 120px;
 }
 
-#right-container{
-    display: flex;
-    flex-direction: column;
-   background-color: azure;
-   align-items: center;
-   justify-content: center;
-   width: 30%;
-   border-radius: 15px;
-}
-.logo{
-    width: 150px;
+.text {
+  padding: 50px;
+  text-align: justify;
 }
 
-.text{
-   padding: 50px;
-    border-top: 2px solid black;
-    text-align: justify;
+#left-container {
+  display: flex;
+  flex-direction: column;
+  background-color: azure;
+  width: 20%;
+  border-radius: 10px;
 }
 
-#left-container{
-    display: flex;
-    flex-direction: column;
-    background-color: azure;
-    width: 30%;
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.input{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#DepartureInput {
+  margin-top: 20px;
+  width: 80%;
+  height: 30px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  border: 0px;
+  border-bottom: 1px solid black;
+}
+
+#ArrivalInput {
+  width: 80%;
+  height: 30px;
+  border: 0px;
+  background-color: lightgrey;
+  border-radius: 5px;
 }

@@ -19,23 +19,30 @@
         
         
     <div id="container">
+
         <div id="content-title">
             <h1 class="explore">Explore the world effortlessly by train!</h1>
             <h2 class="compare">Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</h2>
           </div>
 
         <div id="content-bottom">
+
            <div id="left-container">
             <div class="input">
-                <input type="text" placeholder="Departure">
-                <input type="text" placeholder="Arrival">
+                <input id="DepartureInput" type="text" placeholder="Departure">
+                <input id="ArrivalInput" type="text" placeholder="Arrival">
             </div>
-            <input type="date" value="2022-06-23">
-            <button>Search</button>
+            <div class="input">
+                <input type="date" value="2022-06-23">
+            </div>
+            <div class="input">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+           
            </div>
 
            <div id="right-container">
-            <img class="logo" src="images/train.png" />
+            <img class="logo" src="./images/train.png" />
             <p class="text">It's time to book your future trip</p>
            </div>
         </div>
