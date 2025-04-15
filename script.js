@@ -12,7 +12,23 @@ document.querySelector('#search-btn').addEventListener('click', function () {
         }).then(response => response.json())
         .then(data => {
             if (data.result === true) {
-//alors on affiche 
+                let tripOk = `
+                <div class="row">
+                    <div class="pointApointB">${trip.departure}+" > "+${trip.arrival}</div>
+                    <div class="departureTime"></div>
+                    <div class="tripPrice">${trip.price}+" €"</div>
+                    <button class="addtoCart">Book</button>
+                </div>
+                `
+                document.querySelector('#right-container').innerHTML += tripOk;
+            } else {
+                const noTrip = `
+                <div class="noTrip">
+                    <img id="logo" src="images/notfound.png" />
+                    <h6>No trip found</h6>
+                </div>
+                `
+                document.querySelector('#right-container').innerHTML += noTrip;
             }
         })
     }
