@@ -11,7 +11,6 @@ document.querySelector("#search-btn").addEventListener("click", function () {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       if (data.dataTrip.length != 0) {
         document.querySelector("#timeToBook").style.display = "none";
         for (let i = 0; i < data.dataTrip.length; i++) {
@@ -20,7 +19,9 @@ document.querySelector("#search-btn").addEventListener("click", function () {
                     <div class="pointApointB">${data.dataTrip[i].departure} > ${data.dataTrip[i].arrival}</div>
                     <div class="departureTime">${moment(data.dataTrip[i].date).format("HH:mm")}</div>
                     <div class="tripPrice">${data.dataTrip[i].price} €</div>
-                    <button class="addtoCart">Book</button>
+                    <button type='button' class="addtoCart" id="${
+                      data.dataTrip[i]._id
+                    }">Book</button>
                 </div>
                 `;
           document.querySelector("#right-container").innerHTML += tripOk;
@@ -33,6 +34,15 @@ document.querySelector("#search-btn").addEventListener("click", function () {
                 </div>
                 `;
         document.querySelector("#right-container").innerHTML += noTrip;
+      }
+    })
+    .then(() => {
+      for (let j = 0; j < document.querySelectorAll(".addtoCart").length; j++) {
+        document
+          .querySelectorAll(".addtoCart")
+          [j].addEventListener("click", function () {
+            console.log(this.id);
+          });
       }
     });
 });
