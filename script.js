@@ -5,7 +5,7 @@ document.querySelector('#search-btn').addEventListener('click', function () {
         date: document.querySelector("#dateInput").value,
     }
     if (trip.departure && trip.arrival && trip.date) {
-        fetch('localhost:3000/trips/search',{
+        fetch('http://localhost:3000/trips/search',{
             method: 'POST',
             headers: { 'Content-Type' : 'application/json'},
             body: JSON.stringify({ trip }),
@@ -15,7 +15,7 @@ document.querySelector('#search-btn').addEventListener('click', function () {
                 let tripOk = `
                 <div class="row">
                     <div class="pointApointB">${trip.departure}+" > "+${trip.arrival}</div>
-                    <div class="departureTime"></div>
+                    <div class="departureTime">${trip.date}</div>
                     <div class="tripPrice">${trip.price}+" €"</div>
                     <button class="addtoCart">Book</button>
                 </div>
