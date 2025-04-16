@@ -26,7 +26,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #459e85;
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 100px;
 }
 
@@ -57,7 +57,7 @@ body {
 
 /*start content-title */
 #content-title {
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 .explore {
   color: white;
@@ -76,22 +76,29 @@ body {
 #content-bottom {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 100px;
+  padding: 50px 0;
 }
 
 /*start right container */
 #right-container {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  align-items: center;
   background-color: azure;
-  justify-content: center;
+  justify-content: space-around;
   width: 20%;
+  height: 300px;
   border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 #timeToBook {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 20px;
 }
 
 .logo {
@@ -103,7 +110,8 @@ body {
 .text {
   padding: 50px;
   text-align: justify;
-}
+} 
+
 /*end right container
 
 /* start left container **/
@@ -114,8 +122,10 @@ body {
   justify-content: space-around;
   background-color: azure;
   width: 20%;
-  height: 380px;
+  height: 300px;
   border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
 .input {
@@ -165,15 +175,14 @@ body {
 /*start div row*/
 .row {
   overflow-y: scroll;
-  background-color: azure;
+  background-color: #F5EEEE;
   padding: 20px 0px;
   border-radius: 10px;
-}
-.row {
   display: flex;
-  justify-content: space-evenly;
-  background-color: rgb(236, 236, 236);
+  justify-content: space-around;
+  align-items: center;
   margin: 10px 2px;
+  font-size: 12px;
 }
 
 .addtoCart {
@@ -187,6 +196,4 @@ body {
 .addtoCart:hover {
   color: #459e85;
   background-color: aqua;
-}
-
-/*version 3*/
+} 
