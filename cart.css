@@ -14,7 +14,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   
@@ -57,7 +57,7 @@
 
 #MyCart_title{
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     margin-top: 30px;
 }
@@ -71,7 +71,7 @@
     margin: 20px;
     margin-left: 60px;
     margin-right: 60px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #delete-btn{
@@ -80,7 +80,7 @@
   color: white;
   border-radius: 5px;
   padding: 10px 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #purchase{
@@ -91,7 +91,7 @@
     color: white;
     border-radius: 0 0 10px 10px;   
     padding: 20px 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     
 }
 
@@ -101,7 +101,7 @@
     background-color: #459e85;
     border-radius: 5px;
     padding: 5px 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-right: 30px;
 }
 
