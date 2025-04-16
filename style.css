@@ -9,6 +9,8 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 /*start header */
@@ -21,10 +23,21 @@ body {
 }
 
 .tickethack {
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   color: #459e85;
   font-size: 20px;
   margin-left: 100px;
+}
+
+.bookings {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.cart {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 #link {
@@ -71,15 +84,20 @@ body {
   display: flex;
   flex-direction: column;
   background-color: azure;
-  align-items: center;
   justify-content: center;
   width: 20%;
   border-radius: 10px;
 }
+
+#timeToBook {
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
   margin-top: 30px;
   width: 120px;
-  border-bottom: 2px solid #459e85;
+  border-bottom: 2px solid #459E85;
 }
 
 .text {
@@ -145,7 +163,7 @@ body {
 /*end left container*/
 
 /*start div row*/
-#newright-container {
+.row {
   overflow-y: scroll;
   background-color: azure;
   padding: 20px 0px;
