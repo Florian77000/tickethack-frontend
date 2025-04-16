@@ -11,7 +11,6 @@ document.querySelector("#search-btn").addEventListener("click", function () {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       if (data.dataTrip.length != 0) {
         document.querySelector("#right-container").style.display = "none";
         for (let i = 0; i < data.dataTrip.length; i++) {
@@ -24,7 +23,9 @@ document.querySelector("#search-btn").addEventListener("click", function () {
                       data.dataTrip[i].date
                     ).format("HH:mm")}</div>
                     <div class="tripPrice">${data.dataTrip[i].price} €</div>
-                    <button class="addtoCart">Book</button>
+                    <button type='button' class="addtoCart" id="${
+                      data.dataTrip[i]._id
+                    }">Book</button>
                 </div>
                 `;
           document.querySelector("#newright-container").innerHTML += tripOk;
@@ -37,6 +38,15 @@ document.querySelector("#search-btn").addEventListener("click", function () {
                 </div>
                 `;
         document.querySelector("#right-container").innerHTML += noTrip;
+      }
+    })
+    .then(() => {
+      for (let j = 0; j < document.querySelectorAll(".addtoCart").length; j++) {
+        document
+          .querySelectorAll(".addtoCart")
+          [j].addEventListener("click", function () {
+            console.log(this.id);
+          });
       }
     });
 });
