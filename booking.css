@@ -1,0 +1,100 @@
+* {
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: rgb(236, 236, 236);
+    margin: 0;
+  }
+  
+  /*start header */
+  #header {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  .tickethack {
+    font-weight: bold;
+    color: #459e85;
+    font-size: 20px;
+    margin-left: 100px;
+  }
+  
+  #link {
+    display: flex;
+    gap: 20px;
+    margin-right: 100px;
+  }
+  #link a {
+    color: black;
+    font-size: 15px;
+  }
+  
+  #link a:hover {
+    color: #459e85;
+  }
+  /*end header */
+
+  #container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+}
+
+  #MyBookings{
+    background-color: white;
+    border-radius: 10px;
+    width: 900px;
+    text-align: center;
+}
+
+#MyBookings_title{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-top: 30px;
+}
+#travel-booked{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#ended-text{
+   text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #459e85;
+    font-size: 15px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+}
+
+#purchase-btn{
+    border: none;
+    color: white;
+    background-color: #459e85;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 30px;
+}
+
+#Total{
+    margin-left: 30px;
+}
