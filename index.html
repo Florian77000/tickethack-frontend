@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Tickethack</title>
-</head>
-<body>
-   
-        <div id="header">
-            <h1 class="tickethack">Tickethack</span></h1>
-          <div id="link">
-          <a class="cart" href="https://example.com">Cart</a>
-          <a class="bookings" href="https://example.com">Bookings</a>
-          </div>  
-        </div>
-        
-        
-    <div id="container">
-        <div id="content-title">
-            <h1 class="explore">Explore the world effortlessly by train!</h1>
-            <h2 class="compare">Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</h2>
-          </div>
-
-        <div id="content-bottom">
-           <div id="left-container">
-            <div class="input">
-                <input type="text" placeholder="Departure">
-                <input type="text" placeholder="Arrival">
-            </div>
-            <input type="date" value="2022-06-23">
-            <button>Search</button>
-           </div>
-
-           <div id="right-container">
-            <img class="logo" src="images/train.png" />
-            <p class="text">It's time to book your future trip</p>
-           </div>
-        </div>
+  </head>
+  <body>
+    <div id="header">
+      <a href="#"><h1 class="tickethack">Tickethack</h1></a>
+      <div id="link">
+        <a class="cart" href="https://example.com">Cart</a>
+        <a class="bookings" href="https://example.com">Bookings</a>
+      </div>
     </div>
-    
-       
-        
-</body>
+
+    <div id="container">
+      <div id="content-title">
+        <h1 class="explore">Explore the world effortlessly by train!</h1>
+        <h2 class="compare">
+          Compare, book and enjoy cheap prices for train tickets: your journey
+          starts on Tickethack.
+        </h2>
+      </div>
+
+      <div id="content-bottom">
+        <div id="left-container">
+          <div class="input">
+            <input id="DepartureInput" type="text" placeholder="Departure" />
+            <input id="ArrivalInput" type="text" placeholder="Arrival" />
+          </div>
+          <div class="input">
+            <input id="dateInput" type="date" value="2025-04-14" />
+          </div>
+          <div class="input">
+            <button type="button" id="search-btn">Search</button>
+          </div>
+        </div>
+
+        <div id="right-container">
+          <img class="logo" src="./images/train.png" />
+          <p class="text">It's time to book your future trip</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!--version 3-->
+  </body>
 </html>
