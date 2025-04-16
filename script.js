@@ -4,23 +4,25 @@ document.querySelector('#search-btn').addEventListener('click', function () {
         arrival: document.querySelector("#ArrivalInput").value,
         date: document.querySelector("#dateInput").value,
     }
-    if (trip.departure && trip.arrival && trip.date) {
         fetch('http://localhost:3000/trips/search',{
             method: 'POST',
             headers: { 'Content-Type' : 'application/json'},
-            body: JSON.stringify({ trip }),
+            body: JSON.stringify(trip),
         }).then(response => response.json())
         .then(data => {
-            if (data.result === true) {
+            console.log("1")
+            if (data.dataTrip.length != 0) {
+                console.log("2")
+                for (let i=0; i<data.dataTrip.length; i++) {
                 let tripOk = `
                 <div class="row">
-                    <div class="pointApointB">${trip.departure}+" > "+${trip.arrival}</div>
-                    <div class="departureTime">${trip.date}</div>
-                    <div class="tripPrice">${trip.price}+" €"</div>
+                    <div class="pointApointB">${data.dataTrip[i].departure} > ${data.dataTrip[i].arrival}</div>
+                    <div class="departureTime">${data.dataTrip[i].date}</div>
+                    <div class="tripPrice">${data.dataTrip[i].price} €</div>
                     <button class="addtoCart">Book</button>
                 </div>
                 `
-                document.querySelector('#right-container').innerHTML += tripOk;
+                document.querySelector('#right-container').innerHTML += tripOk;}
             } else {
                 const noTrip = `
                 <div class="noTrip">
@@ -28,8 +30,8 @@ document.querySelector('#search-btn').addEventListener('click', function () {
                     <h6>No trip found</h6>
                 </div>
                 `
+                console.log("3")
                 document.querySelector('#right-container').innerHTML += noTrip;
             }
         })
-    }
 })
